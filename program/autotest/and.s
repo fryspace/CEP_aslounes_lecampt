@@ -2,9 +2,9 @@
 	.text
 
 	and x31, x0, x0      # Test 0 and 0
-	addi x1, x0, 0x2A # On ajoute 42 à x1
-	addi x2, x0, 0x45 # On ajoute 69 à x2
-	and x31, x1, x2 # On fait x1 and x2
+	addi x6, x0, 0x6 	# On ajoute 6 à x6
+	addi x2, x0, 0x1 	# On ajoute 1 à x2
+	and x31, x6, x2		 # On fait x1 and x2
 
 
 	# max_cycle 50

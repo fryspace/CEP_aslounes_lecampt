@@ -207,6 +207,10 @@ begin
                 elsif status.IR(6 downto 0) = "1100011" then
                     cmd.PC_we <= '0';
                     state_d <= S_JUMP;
+                elsif status.IR(6 downto 0)= "0110011" then 
+                    cmd.PC_sel <= PC_from_PC;
+                    cmd.PC_we <= '1';
+                    state_d <= S_SL;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
