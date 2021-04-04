@@ -5,7 +5,7 @@
 	bltu x0, x1, suite   
 	addi x31, x0, 0x11 # On ajoute 17 à x31
 suite:
-	addi x31, x0, 0x45 # On ajoute 6 à x31
+	addi x31, x0, 0x06 # On ajoute 6 à x31
 
 
 	# max_cycle 50
