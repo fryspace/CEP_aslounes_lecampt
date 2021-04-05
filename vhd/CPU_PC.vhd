@@ -46,7 +46,8 @@ architecture RTL of CPU_PC is
         S_SRLI,
         S_AUIPC,
         S_JUMP,
-        S_SL
+        S_SL,
+        S_SLT
     );
 
     signal state_d, state_q : State_type;
@@ -150,7 +151,7 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
                     state_d <= S_ADD;
-                elsif status.IR(6 downto 0) = "0110011" and status.IR(14 downto 12) = "111" then
+                elsif status.IR(6 downto 0) = "0110011"² and status.IR(14 downto 12) = "111" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
                     state_d <= S_AND;
@@ -212,6 +213,10 @@ begin
                     cmd.PC_sel <= PC_from_PC;
                     cmd.PC_we <= '1';
                     state_d <= S_SL;
+                elsif status.IR(6 downto 0)= "0110011" and status.IT(14 downto 12) = "010" and status.IR(31 downto 25) = "0000000" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we <= '1';
+                    state_d <= S_SLT;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -380,6 +385,7 @@ begin
                 state_d <= S_Fetch;
             
             when S_OR =>
+
                 -- ajout au registre rd
                 cmd.ALU_Y_sel <= ALU_Y_rf_rs2;
                 cmd.LOGICAL_op <= LOGICAL_or;
@@ -463,6 +469,19 @@ begin
                 cmd.mem_we <= '0';
                 -- état suivant
                 state_d <= S_Pre_Fetch;
+            
+            when S_SLT => 
+                -- ajout au registre rd
+                cmd.ALU_Y_sel <= ALU_Y_rf_rs2;
+                cmd.DATA_sel <= DATA_from_slt;
+                cmd_RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Pre_Fetch;
+
 
 ---------- Instructions de chargement à partir de la mémoire ----------
 

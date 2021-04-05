@@ -2,12 +2,12 @@
 	.text
 
 	xori x31, x0, 0x0      #Test chargement d'une valeur nulle
-	addi x1, x0, 0x2A # On ajoute 42 à x1
-	xori x31, x1, 0x45 # On fait x1 xor 69
+	addi x1, x0, 0x6 # On ajoute 6 à x1
+	xori x31, x1, 0x1 # On fait x1 xor 1
 
 
 	# max_cycle 50
 	# pout_start
 	# 00000000
-	# 0000006f
+	# 00000007
 	# pout_end
