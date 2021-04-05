@@ -48,7 +48,11 @@ architecture RTL of CPU_PC is
         S_JUMP,
         S_SL,
         S_SLT,
-        S_SLTI
+        S_SLTI,
+        S_SLTIU,
+        S_SLTU,
+        S_JAL,
+        S_JALR
     );
 
     signal state_d, state_q : State_type;
@@ -226,6 +230,18 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
                     state_d <= S_SLTIU;
+                elsif status.IR(6 downto 0)= "0110011" and status.IR(14 downto 12) = "011" and status.IR(31 downto 25) = "0000000" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we <= '1';
+                    state_d <= S_SLTU;
+                elsif status.IR(6 downto 0)="1101111" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_JAL;
+                elsif status.IR(6 downto 0)="1100111" and status.IR(14 downto 12) ="000" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_JALR;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -520,6 +536,53 @@ begin
                 cmd.mem_we <= '0';
                 -- état suivant
                 state_d <= S_Pre_Fetch;
+
+            when S_SLTU => 
+                -- ajout au registre rd
+                cmd.ALU_Y_sel <= ALU_Y_rf_rs2;
+                if status.jcond then
+                    cmd.DATA_sel <= DATA_from_slt;
+                    cmd.RF_we <= '1';
+                end if;
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Pre_Fetch;
+            when S_JAL => 
+                -- ajout au registre rd
+                cmd.PC_X_sel <= PC_X_pc;
+                cmd.PC_Y_sel <= PC_Y_cst_x04;
+                cmd.DATA_sel <= DATA_from_pc;
+                -- création de la constante
+                -- ajout à PC
+                cmd.TO_PC_Y_sel <= TO_PC_Y_immJ;
+                cmd.PC_sel <= PC_from_pc;
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Pre_Fetch;
+
+            when S_JALR => 
+                -- ajout au registre rd
+                cmd.PC_X_sel <= PC_X_pc;
+                cmd.PC_Y_sel <= PC_Y_cst_x04;
+                cmd.DATA_sel <= DATA_from_pc;
+                -- création de la constante
+                -- ajout à PC
+                cmd.ALU_Y_sel <= ALU_Y_immI;
+                cmd.ALU_op <= ALU_plus;
+                cmd.PC_sel <= PC_from_alu;
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Pre_Fetch;
+
 
 
 ---------- Instructions de chargement à partir de la mémoire ----------
