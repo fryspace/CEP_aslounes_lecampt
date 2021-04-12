@@ -46,12 +46,13 @@ architecture RTL of CPU_PC is
         S_SRLI,
         S_AUIPC,
         S_JUMP,
-        S_SL,
         S_SLT,
         S_SLTI,
         S_JAL,
         S_JALR,
-        S_LB
+        S_LB,
+        S_LB_sel,
+        S_LB_we
     );
 
     signal state_d, state_q : State_type;
@@ -229,8 +230,10 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
                     state_d <= S_JALR;
-                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12)="000" then
-
+                elsif status.IR(6 downto 0)="0000011" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_LB;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -544,6 +547,31 @@ begin
 
 
 ---------- Instructions de chargement à partir de la mémoire ----------
+           
+            when S_LB =>
+                cmd.AD_Y_sel <= AD_Y_immI;
+                cmd.AD_we <= '1';
+                state_d <= S_LB_sel;
+            
+            when S_LB_sel =>
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                state_d <= S_LB_we;
+
+            when S_LB_we =>
+                cmd.RF_SIGN_enable <= '1';
+                cmd.RF_SIZE_sel <= RF_SIZE_byte;
+                cmd.DATA_sel <= DATA_from_mem;
+                cmd.RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Pre_Fetch;
+
+
 
 ---------- Instructions de sauvegarde en mémoire ----------
 
