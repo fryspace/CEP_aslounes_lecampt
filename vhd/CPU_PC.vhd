@@ -52,7 +52,19 @@ architecture RTL of CPU_PC is
         S_JALR,
         S_LB,
         S_LB_sel,
-        S_LB_we
+        S_LB_we,
+        S_LH,
+        S_LH_sel,
+        S_LH_we,
+        S_LW,
+        S_LW_sel,
+        S_LW_we,
+        S_LBU,
+        S_LBU_sel,
+        S_LBU_we,
+        S_LHU,
+        S_LHU_sel,
+        S_LHU_we
     );
 
     signal state_d, state_q : State_type;
@@ -230,10 +242,26 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
                     state_d <= S_JALR;
-                elsif status.IR(6 downto 0)="0000011" then
+                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "000" then 
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
                     state_d <= S_LB;
+                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "001" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_LH;
+                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "010" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_LW;
+                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "101" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_LHU;
+                elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "100" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_LBU;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -571,6 +599,97 @@ begin
                 -- état suivant
                 state_d <= S_Fetch;
 
+            when S_LH =>
+                cmd.AD_Y_sel <= AD_Y_immI;
+                cmd.AD_we <= '1';
+                state_d <= S_LH_sel;
+            
+            when S_LH_sel =>
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                state_d <= S_LH_we;
+
+            when S_LH_we =>
+                cmd.RF_SIGN_enable <= '1';
+                cmd.RF_SIZE_sel <= RF_SIZE_half;
+                cmd.DATA_sel <= DATA_from_mem;
+                cmd.RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;   
+
+            when S_LW =>
+                cmd.AD_Y_sel <= AD_Y_immI;
+                cmd.AD_we <= '1';
+                state_d <= S_LW_sel;
+            
+            when S_LW_sel =>
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                state_d <= S_LW_we;
+
+            when S_LW_we =>
+                cmd.RF_SIGN_enable <= '1';
+                cmd.RF_SIZE_sel <= RF_SIZE_word;
+                cmd.DATA_sel <= DATA_from_mem;
+                cmd.RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch; 
+            
+            when S_LHU =>
+                cmd.AD_Y_sel <= AD_Y_immI;
+                cmd.AD_we <= '1';
+                state_d <= S_LHU_sel;
+            
+            when S_LHU_sel =>
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                state_d <= S_LHU_we;
+
+            when S_LHU_we =>
+                cmd.RF_SIGN_enable <= '0';
+                cmd.RF_SIZE_sel <= RF_SIZE_half;
+                cmd.DATA_sel <= DATA_from_mem;
+                cmd.RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;  
+            
+            when S_LBU =>
+                cmd.AD_Y_sel <= AD_Y_immI;
+                cmd.AD_we <= '1';
+                state_d <= S_LBU_sel;
+            
+            when S_LBU_sel =>
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                state_d <= S_LBU_we;
+
+            when S_LBU_we =>
+                cmd.RF_SIGN_enable <= '0';
+                cmd.RF_SIZE_sel <= RF_SIZE_byte;
+                cmd.DATA_sel <= DATA_from_mem;
+                cmd.RF_we <= '1';
+                -- lecture de la mémoire 
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;
 
 
 ---------- Instructions de sauvegarde en mémoire ----------
