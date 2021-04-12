@@ -31,3 +31,6 @@ JAL
 JALR
 LB 
 LBU 
+LH
+LHU
+LW
