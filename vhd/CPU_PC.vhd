@@ -83,8 +83,8 @@ begin
         cmd.SHIFTER_Y_sel     <= SHIFTER_Y_rs2;
 
         cmd.RF_we             <= '0';
-        cmd.RF_SIZE_sel       <= UNDEFINED;
-        cmd.RF_SIGN_enable    <= 'U';
+        cmd.RF_SIZE_sel       <= RF_SIZE_word;
+        cmd.RF_SIGN_enable    <= '1';
         cmd.DATA_sel          <= DATA_from_pc;
 
         cmd.PC_we             <= '0';
@@ -569,7 +569,7 @@ begin
                 cmd.mem_ce <= '1';
                 cmd.mem_we <= '0';
                 -- état suivant
-                state_d <= S_Pre_Fetch;
+                state_d <= S_Fetch;
 
 
 
