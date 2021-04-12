@@ -1,0 +1,1199 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+ERROR: [VRFC 10-2989] 's_sl' is not declared [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:213]
+ERROR: [VRFC 10-3782] unit 'rtl' ignored due to previous errors [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:24]
+INFO: [VRFC 10-3070] VHDL file '/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+ERROR: [VRFC 10-4982] syntax error near 'non-printable character with the hex value '0xc2'' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:154]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:158]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:162]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:166]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:170]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:174]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:178]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:182]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:186]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:190]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:194]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:198]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:202]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:206]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:209]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:212]
+ERROR: [VRFC 10-4982] syntax error near 'elsif' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:216]
+ERROR: [VRFC 10-4982] syntax error near 'else' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:220]
+ERROR: [VRFC 10-4982] syntax error near 'if' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:223]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+ERROR: [VRFC 10-3464] indexed name prefix type 'boolean' is not an array type [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:216]
+ERROR: [VRFC 10-2989] 'cmd_rf_we' is not declared [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:477]
+ERROR: [VRFC 10-3782] unit 'rtl' ignored due to previous errors [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:24]
+INFO: [VRFC 10-3070] VHDL file '/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM32.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM16DP.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM16DP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_LED.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_LED'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PIN.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_PROC'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM32.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM16DP.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM16DP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_LED.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_LED'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PIN.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_PROC'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM32.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM16DP.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM16DP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_LED.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_LED'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PIN.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_PROC'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM32.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM16DP.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM16DP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_LED.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_LED'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PIN.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_PROC'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM32.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/RAM16DP.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM16DP'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_LED.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_LED'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PIN.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PIN'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_PROC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_PROC'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+ERROR: [VRFC 10-4982] syntax error near '=' [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:553]
+ERROR: [VRFC 10-3782] unit 'rtl' ignored due to previous errors [/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd:24]
+INFO: [VRFC 10-3070] VHDL file '/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd' ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PKG.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PO.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CSR.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CSR'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_CND'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_PC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'CPU_PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_ITPush.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_ITpush'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_PLIC.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_PLIC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/IP_CLINT.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'IP_CLINT'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/PROC_bus.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'PROC_bus'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" into library work
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'RAM32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'tb_autotest'

@@ -1,0 +1,1049 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /bigsoft/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab tb_autotest -initfile=/bigsoft/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini -L xpm -nolog -debug typical -generic_top mutant=0 
+Multi-threading is on. Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package work.pkg
+Compiling package work.txt_util
+Compiling architecture rtl of entity work.CPU_PC [cpu_pc_default]
+Compiling architecture rtl of entity work.CPU_CSR [\CPU_CSR(interrupt_vector="00000...]
+Compiling architecture rtl of entity work.CPU_CND [cpu_cnd_default]
+Compiling architecture rtl of entity work.CPU_PO [\CPU_PO(reset_vector="0000000000...]
+Compiling architecture rtl of entity work.CPU [\CPU(reset_vector="0000000000000...]
+Compiling architecture rtl of entity work.PROC_bus [\PROC_bus(n_slave=3,base=("00000...]
+Compiling architecture behavioral of entity work.RAM32 [\RAM32(memory_size=32768,file_na...]
+Compiling architecture rtl of entity work.IP_ITpush [ip_itpush_default]
+Compiling architecture rtl of entity work.IP_PLIC [ip_plic_default]
+Compiling architecture rtl of entity work.IP_CLINT [ip_clint_default]
+Compiling architecture behavior of entity work.tb_autotest
+Built simulation snapshot work.tb_autotest
+
+****** xsim v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/work.tb_autotest/xsim_script.tcl
+# xsim {work.tb_autotest} -wdb {trace.wdb} -autoloadwcfg -tclbatch {/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/config/autotest.xsim.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/config/autotest.xsim.tcl
+## if {[info exists ::env(TESTS)]} {
+## 	set string_test $env(TESTS)
+## } else {
+## 	set string_test 
+## }
+## set tests [regexp -all -inline -- {\S+} $string_test]
+## puts $string_test
+ addi  add  andi  and  auipc  beq  bge  bgeu  blt  bltu  bne  lb  lbu  lui  ori  or  rebouclage  slli  sll  slti  sltiu  slt  sltu  srai  sra  srli  srl  sub  xori  xor
+## puts $tests
+addi add andi and auipc beq bge bgeu blt bltu bne lb lbu lui ori or rebouclage slli sll slti sltiu slt sltu srai sra srli srl sub xori xor
+## foreach test $tests {
+## 	put "Preparing test: ${test}"
+## 	file delete test_default.out test_default.irq test_default.setup test_default.mem
+## 	file link -symbolic test_default.out   ${test}/test_default.out
+## 	file link -symbolic test_default.irq   ${test}/test_default.irq
+## 	file link -symbolic test_default.setup ${test}/test_default.setup
+## 	file link -symbolic test_default.mem   ../mem/${test}.mem
+## 
+## 	put "Running test: ${test}"
+## 	restart
+## 	run -all
+## 	file copy -force test_default.res  ${test}
+## 	file copy -force test_default.test ${test}
+## }
+Preparing test: addi
+Running test: addi
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00000F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 005F8F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000005  get : 0x00000005
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 90 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: add
+Running test: add
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00000FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100313
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01F30FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000011  get : 0x00000011
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: andi
+Running test: andi
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00007F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00600093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0010FF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: and
+Running test: and
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00007FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00600313
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00100113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00237FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 140 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: auipc
+Running test: auipc
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00000F97
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00006F97
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00001000  get : 0x00001000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Note: pout expect   : 0x00007004  get : 0x00007004
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 100 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: beq
+Running test: beq
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00000463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 90 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 100 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 100 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: bge
+Running test: bge
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 0000D463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: bgeu
+Running test: bgeu
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 0000F463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: blt
+Running test: blt
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00104463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: bltu
+Running test: bltu
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00106463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: bne
+Running test: bne
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00101463
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 01100F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: lb
+Running test: lb
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00001137
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00010F83
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: FAILED 
+Time: 110 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 110 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 110 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: lbu
+Running test: lbu
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00001137
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00014F83
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: FAILED 
+Time: 110 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 110 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 110 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: lui
+Running test: lui
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00000FB7
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = FFFFFFB7
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 12345FB7
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Note: pout expect   : 0xFFFFF000  get : 0xFFFFF000
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Note: pout expect   : 0x12345000  get : 0x12345000
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: ori
+Running test: ori
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00006F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0060EF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000017  get : 0x00000017
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: or
+Running test: or
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00006FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00600F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 01F0EFB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000006  get : 0x00000006
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 140 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000017  get : 0x00000017
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: rebouclage
+Running test: rebouclage
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = FFFFFFB7
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 12345FB7
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0xFFFFF000  get : 0xFFFFF000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Note: pout expect   : 0xFFFFF000  get : 0xFFFFF000
+Time: 140 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 140 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 140 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 140 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: slli
+Running test: slli
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00001F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00109F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000002  get : 0x00000002
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: sll
+Running test: sll
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00001FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00100113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 00111FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000002  get : 0x00000002
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: slti
+Running test: slti
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00002F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0060AF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 90 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: sltiu
+Running test: sltiu
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00003F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0060BF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 90 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 130 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 130 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: slt
+Running test: slt
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00600113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00202FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 90 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 90 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: sltu
+Running test: sltu
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00003FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00600113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 0020BFB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = 00113FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1029] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 90 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 120 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 150 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 160 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 190 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 200 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 200 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 200 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 200 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: srai
+Running test: srai
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 40005F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00200093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 4010DF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: sra
+Running test: sra
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 40005FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00200113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 40115FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: srli
+Running test: srli
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00005F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00200093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0010DF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: srl
+Running test: srl
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00005FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00200093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00100113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 0020DFB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000001  get : 0x00000001
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: sub
+Running test: sub
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 40000FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 01100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00600113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 40208FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = 40110FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1029] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 140 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x0000000B  get : 0x0000000B
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 170 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0xFFFFFFF5  get : 0xFFFFFFF5
+Time: 180 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 180 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 180 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 180 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: xori
+Running test: xori
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00004F93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00600093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 0010CF93
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000007  get : 0x00000007
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 120 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 120 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+Preparing test: xor
+Running test: xor
+INFO: [Simtcl 6-17] Simulation restarted
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 0  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: @ 00000400 = 1024
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1024] = 00004FB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1025] = 00100093
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1026] = 00200113
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1027] = 0020CFB3
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Note: memory[1028] = FFFFFFFF
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000000  get : 0x00000000
+Time: 60 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 80 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 140 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
+Note: pout expect   : 0x00000003  get : 0x00000003
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
+## exit
+INFO: [Common 17-206] Exiting xsim at Mon Apr 12 10:58:28 2021...
