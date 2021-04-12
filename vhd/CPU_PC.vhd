@@ -213,10 +213,6 @@ begin
                 elsif status.IR(6 downto 0) = "1100011" then
                     cmd.PC_we <= '0';
                     state_d <= S_JUMP;
-                elsif status.IR(6 downto 0)= "0110011" then 
-                    cmd.PC_sel <= PC_from_PC;
-                    cmd.PC_we <= '1';
-                    state_d <= S_SL;
                 elsif status.IR(6 downto 0)= "0110011" and status.IR(31 downto 25) = "0000000" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
