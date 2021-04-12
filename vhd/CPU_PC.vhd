@@ -217,22 +217,14 @@ begin
                     cmd.PC_sel <= PC_from_PC;
                     cmd.PC_we <= '1';
                     state_d <= S_SL;
-                elsif status.IR(6 downto 0)= "0110011" and status.IR(14 downto 12) = "010" and status.IR(31 downto 25) = "0000000" then
+                elsif status.IR(6 downto 0)= "0110011" and status.IR(31 downto 25) = "0000000" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
                     state_d <= S_SLT;
-                elsif status.IR(6 downto 0)= "0010011" and status.IR(14 downto 12) = "010" then
+                elsif status.IR(6 downto 0)= "0010011" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we <= '1';
                     state_d <= S_SLTI;
-                elsif status.IR(6 downto 0)= "0010011" and status.IR(14 downto 12) = "011" then
-                    cmd.PC_sel <= PC_from_pc;
-                    cmd.PC_we <= '1';
-                    state_d <= S_SLTI;
-                elsif status.IR(6 downto 0)= "0110011" and status.IR(14 downto 12) = "011" and status.IR(31 downto 25) = "0000000" then
-                    cmd.PC_sel <= PC_from_pc;
-                    cmd.PC_we <= '1';
-                    state_d <= S_SLT;
                 elsif status.IR(6 downto 0)="1101111" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
