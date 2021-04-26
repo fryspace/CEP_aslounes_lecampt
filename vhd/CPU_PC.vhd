@@ -65,7 +65,9 @@ architecture RTL of CPU_PC is
         S_LHU,
         S_LHU_sel,
         S_LHU_we,
-        S_SB
+        S_SB,
+        S_SB_2,
+        S_SB_3
     );
 
     signal state_d, state_q : State_type;
@@ -704,10 +706,21 @@ begin
             when S_SB =>
                 cmd.AD_Y_sel <= AD_Y_immS;
                 cmd.AD_we <= '1';
+                state_d <= S_SB_2
+            
+            when S_SB_2 =>
+                --cmd.RF_SIZE_sel <= RF_SIZE_byte;
                 cmd.ADDR_sel <= ADDR_from_ad;
                 cmd.mem_we <= '1';
                 cmd.mem_ce <= '1';
-                state_d <= S_Pre_fetch;
+                state_d <= S_SB_3;
+            
+            when S_SB_3 =>
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;
 
 ---------- Instructions d'accès aux CSR ----------
 
