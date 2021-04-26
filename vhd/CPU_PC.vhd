@@ -235,12 +235,10 @@ begin
                     cmd.PC_we <= '1';
                     state_d <= S_SLTI;
                 elsif status.IR(6 downto 0)="1101111" then
-                    cmd.PC_sel <= PC_from_pc;
-                    cmd.PC_we<='1';
+                    cmd.PC_we<='0';
                     state_d <= S_JAL;
                 elsif status.IR(6 downto 0)="1100111" and status.IR(14 downto 12) ="000" then
-                    cmd.PC_sel <= PC_from_pc;
-                    cmd.PC_we<='1';
+                    cmd.PC_we<='0';
                     state_d <= S_JALR;
                 elsif status.IR(6 downto 0)="0000011" and status.IR(14 downto 12) = "000" then 
                     cmd.PC_sel <= PC_from_pc;
@@ -568,6 +566,7 @@ begin
                 cmd.ALU_Y_sel <= ALU_Y_immI;
                 cmd.ALU_op <= ALU_plus;
                 cmd.PC_sel <= PC_from_alu;
+                cmd.PC_we <= '1';
                 -- lecture de la mémoire 
                 cmd.ADDR_sel <= ADDR_from_pc;
                 cmd.mem_ce <= '1';
