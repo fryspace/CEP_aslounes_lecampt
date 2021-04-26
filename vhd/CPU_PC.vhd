@@ -709,7 +709,7 @@ begin
                 state_d <= S_SB_2;
             
             when S_SB_2 =>
-                --cmd.RF_SIZE_sel <= RF_SIZE_byte;
+                cmd.RF_SIZE_sel <= RF_SIZE_byte;
                 cmd.ADDR_sel <= ADDR_from_ad;
                 cmd.mem_we <= '1';
                 cmd.mem_ce <= '1';
