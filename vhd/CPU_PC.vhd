@@ -549,6 +549,7 @@ begin
                 -- ajout à PC
                 cmd.TO_PC_Y_sel <= TO_PC_Y_immJ;
                 cmd.PC_sel <= PC_from_pc;
+                cmd.PC_we <= '1';
                 -- lecture de la mémoire 
                 cmd.ADDR_sel <= ADDR_from_pc;
                 cmd.mem_ce <= '1';
