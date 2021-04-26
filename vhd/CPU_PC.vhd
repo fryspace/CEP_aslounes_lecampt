@@ -49,7 +49,6 @@ architecture RTL of CPU_PC is
         S_SLT,
         S_SLTI,
         S_JAL_RD,
-        S_JAL_PC
         S_JALR,
         S_LB,
         S_LB_sel,
@@ -546,7 +545,6 @@ begin
                 cmd.PC_Y_sel <= PC_Y_cst_x04;
                 cmd.DATA_sel <= DATA_from_pc;
                 cmd.RF_we <= '1';
-                state_d <= S_JAL_PC;
                 -- création de la constante
                 -- ajout à PC
                 cmd.TO_PC_Y_sel <= TO_PC_Y_immJ;
@@ -563,6 +561,7 @@ begin
                 cmd.PC_X_sel <= PC_X_pc;
                 cmd.PC_Y_sel <= PC_Y_cst_x04;
                 cmd.DATA_sel <= DATA_from_pc;
+                cmd.RF_we <= '1'
                 -- création de la constante
                 -- ajout à PC
                 cmd.ALU_Y_sel <= ALU_Y_immI;
