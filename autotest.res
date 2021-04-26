@@ -14,7 +14,7 @@ lbu         PASSED
 lh          PASSED
 lhu         PASSED
 lui         PASSED
-lw          PASSED
+lw          FAILED
 ori         PASSED
 or          PASSED
 rebouclage  PASSED

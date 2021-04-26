@@ -48,7 +48,8 @@ architecture RTL of CPU_PC is
         S_JUMP,
         S_SLT,
         S_SLTI,
-        S_JAL,
+        S_JAL_RD,
+        S_JAL_PC
         S_JALR,
         S_LB,
         S_LB_sel,
@@ -237,7 +238,7 @@ begin
                 elsif status.IR(6 downto 0)="1101111" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
-                    state_d <= S_JAL;
+                    state_d <= S_JAL_RD;
                 elsif status.IR(6 downto 0)="1100111" and status.IR(14 downto 12) ="000" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
@@ -539,11 +540,14 @@ begin
                 -- état suivant
                 state_d <= S_Pre_Fetch;
                     
-            when S_JAL => 
+            when S_JAL_RD => 
                 -- ajout au registre rd
                 cmd.PC_X_sel <= PC_X_pc;
                 cmd.PC_Y_sel <= PC_Y_cst_x04;
                 cmd.DATA_sel <= DATA_from_pc;
+                state_d <= S_JAL_PC;
+            
+            when S_JAL_PC =>
                 -- création de la constante
                 -- ajout à PC
                 cmd.TO_PC_Y_sel <= TO_PC_Y_immJ;
