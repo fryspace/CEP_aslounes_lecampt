@@ -9,12 +9,14 @@ bgeu        PASSED
 blt         PASSED
 bltu        PASSED
 bne         PASSED
+jalr        PASSED
+jal         PASSED
 lb          PASSED
 lbu         PASSED
 lh          PASSED
 lhu         PASSED
 lui         PASSED
-lw          FAILED
+lw          PASSED
 ori         PASSED
 or          PASSED
 rebouclage  PASSED
