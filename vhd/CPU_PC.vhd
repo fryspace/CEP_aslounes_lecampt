@@ -561,7 +561,7 @@ begin
                 cmd.PC_X_sel <= PC_X_pc;
                 cmd.PC_Y_sel <= PC_Y_cst_x04;
                 cmd.DATA_sel <= DATA_from_pc;
-                cmd.RF_we <= '1'
+                cmd.RF_we <= '1';
                 -- création de la constante
                 -- ajout à PC
                 cmd.ALU_Y_sel <= ALU_Y_immI;

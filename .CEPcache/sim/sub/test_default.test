@@ -1,3 +1,0 @@
-pout expect : 0x00000000  get : 0x00000000
-pout expect : 0x0000000B  get : 0x0000000B
-pout expect : 0xFFFFFFF5  get : 0xFFFFFFF5
