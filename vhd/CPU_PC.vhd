@@ -706,7 +706,7 @@ begin
             when S_SB =>
                 cmd.AD_Y_sel <= AD_Y_immS;
                 cmd.AD_we <= '1';
-                state_d <= S_SB_2
+                state_d <= S_SB_2;
             
             when S_SB_2 =>
                 --cmd.RF_SIZE_sel <= RF_SIZE_byte;
