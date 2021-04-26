@@ -606,7 +606,9 @@ begin
                 -- état suivant
                 state_d <= S_Fetch;
 
-            when S_LH =>mem_we
+            when S_LH =>
+                cmd.AD_we <= '1';
+                cmd.AD_Y_sel <= AD_Y_immI;
                 state_d <= S_LH_we;
 
             when S_LH_we =>
