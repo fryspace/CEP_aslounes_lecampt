@@ -697,17 +697,10 @@ begin
                 cmd.mem_we <= '0';
                 -- état suivant
                 state_d <= S_Fetch;
-            
-            when S_SB =>
-                cmd.AD_Y_sel <= AD_Y_immS;
-                cmd.AD_we <= '1';
-                cmd.ADDR_sel <= ADDR_from_ad;
-                cmd.mem_we <= '1';
-                cmd.mem_ce <= '1';
-                state_d <= S_Pre_fetch;
 
 
 ---------- Instructions de sauvegarde en mémoire ----------
+            
             when S_SB =>
                 cmd.AD_Y_sel <= AD_Y_immS;
                 cmd.AD_we <= '1';
