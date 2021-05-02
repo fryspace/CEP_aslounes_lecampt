@@ -67,7 +67,13 @@ architecture RTL of CPU_PC is
         S_LHU_we,
         S_SB,
         S_SB_2,
-        S_SB_3
+        S_SB_3,
+        S_SH,
+        S_SH2,
+        S_SH3,
+        S_SW,
+        S_SW2,
+        S_SW3
     );
 
     signal state_d, state_q : State_type;
@@ -267,6 +273,14 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
                     state_d <= S_SB;
+                elsif status.IR(6 downto 0)="0100011" and status.IR(14 downto 12) = "001" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_SH;
+                elsif status.IR(6 downto 0)="0100011" and status.IR(14 downto 12) = "010" then
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_SH;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -721,6 +735,49 @@ begin
                 cmd.mem_we <= '0';
                 -- état suivant
                 state_d <= S_Fetch;
+                when S_SB =>
+                cmd.AD_Y_sel <= AD_Y_immS;
+                cmd.AD_we <= '1';
+                state_d <= S_SB_2;
+            
+            when S_SH =>
+                cmd.AD_Y_sel <= AD_Y_immS;
+                cmd.AD_we <= '1';
+                state_d <= S_SH_2;
+        
+            when S_SH_2 =>
+                cmd.RF_SIZE_sel <= RF_SIZE_half;
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_we <= '1';
+                cmd.mem_ce <= '1';
+                state_d <= S_SH_3;
+            
+            when S_SH_3 =>
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;   
+            
+            when S_SW =>
+                cmd.AD_Y_sel <= AD_Y_immS;
+                cmd.AD_we <= '1';
+                state_d <= S_SW_2;
+        
+            when S_SW_2 =>
+                cmd.RF_SIZE_sel <= RF_SIZE_word;
+                cmd.ADDR_sel <= ADDR_from_ad;
+                cmd.mem_we <= '1';
+                cmd.mem_ce <= '1';
+                state_d <= S_SW_3;
+            
+            when S_SW_3 =>
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
+                -- état suivant
+                state_d <= S_Fetch;  
+            
 
 ---------- Instructions d'accès aux CSR ----------
 
