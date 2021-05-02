@@ -828,6 +828,9 @@ begin
                         cmd.cs.CSR_sel <= CSR_from_mcause;
                     when x"344" =>
                         cmd.cs.CSR_sel <= CSR_from_mip;
+                    when others =>
+                        cmd.cs.CSR_we <= UNDIFINED;
+                        cmd.cs.CSR_sel <= UNDIFINED;
                 end case;
 
         
