@@ -808,6 +808,7 @@ begin
                     when "111" =>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
                         cmd.cs.CSR_WRITE_mode <=  WRITE_mode_clear;
+                    when others => 
                 end case;
                 
                 case status.IR(31 downto 20) is 
