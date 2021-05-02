@@ -812,16 +812,16 @@ begin
                 
                 case status.IR(31 downto 20) is 
                     when x"300" => 
-                        cmd.cs.CSR_write_enable <= CSR_mstatus;
+                        cmd.cs.CSR_we <= CSR_mstatus;
                         cmd.cs.CSR_sel <= CSR_from_mstatus;
                     when x"304" => 
-                        cmd.cs.CSR_write_enable <= CSR_mie;
+                        cmd.cs.CSR_we <= CSR_mie;
                         cmd.cs.CSR_sel <= CSR_from_mie;
                     when x"305"=>
-                        cmd.cs.CSR_write_enable <= CSR_mtvec;
+                        cmd.cs.CSR_we <= CSR_mtvec;
                         cmd.cs.CSR_sel <= CSR_from_mtvec;
                     when x"341" => 
-                        cmd.cs.CSR_write_enable <= CSR_mepc;
+                        cmd.cs.CSR_we <= CSR_mepc;
                         cmd.cs.CSR_sel <= CSR_from_mepc;
                         cmd.cs.MEPC_sel <= MEPC_from_csr;
                     when x"342" => 
