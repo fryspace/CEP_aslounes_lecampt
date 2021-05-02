@@ -280,7 +280,7 @@ begin
                 elsif status.IR(6 downto 0)="0100011" and status.IR(14 downto 12) = "010" then
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
-                    state_d <= S_SH;
+                    state_d <= S_SW;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
