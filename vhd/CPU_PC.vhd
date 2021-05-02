@@ -73,7 +73,8 @@ architecture RTL of CPU_PC is
         S_SH_3,
         S_SW,
         S_SW_2,
-        S_SW_3
+        S_SW_3,
+        S_CSRR
     );
 
     signal state_d, state_q : State_type;
@@ -281,6 +282,10 @@ begin
                     cmd.PC_sel <= PC_from_pc;
                     cmd.PC_we<='1';
                     state_d <= S_SW;
+                elsif status.IR(6 downto 0)="1110011" then 
+                    cmd.PC_sel <= PC_from_pc;
+                    cmd.PC_we<='1';
+                    state_d <= S_CSRR;
                 else 
                     state_d <= S_Error;
                 -- au cas où il y a une erreur 
@@ -776,7 +781,56 @@ begin
             
 
 ---------- Instructions d'accès aux CSR ----------
+            
+            when S_CSRR =>
+                cmd.DATA_sel <= DATA_from_csr;
+                cmd.RF_we <= '1';
+                cmd.ADDR_sel <= ADDR_from_pc;
+                cmd.mem_ce <= '1';
+                cmd.mem_we <= '0';
 
+                case status.IR(14 downto 12) is 
+                    when "001" =>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_simple;
+                    when "010" =>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_set;
+                    when "011"=>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_clear;
+                    when "101"=>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_simple;
+                    when "110"=>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_set;
+                    when "111" =>
+                        cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
+                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_clear;
+                end case;
+                
+                case status.IR(31 downto 20) is 
+                    when x"300" => 
+                        cmd.cs.CSR_write_enable <= CSR_mstatus;
+                        cmd.cs.CSR_select <= CSR_from_mstatus;
+                    when x"304" => 
+                        cmd.cs.CSR_write_enable <= CSR_mie;
+                        cmd.cs.CSR_select <= CSR_from_mie;
+                    when x"305"=>
+                        cmd.cs.CSR_write_enable <= CSR_mtvec;
+                        cmd.cs.CSR_select <= CSR_from_mtvec;
+                    when x"341" => 
+                        cmd.cs.CSR_write_enable <= CSR_mepc;
+                        cmd.cs.CSR_select <= CSR_from_mepc;
+                        cmd.cs.MEPC_select <= MEPC_from_csr;
+                    when x"342" => 
+                        cmd.cs.CSR_select <= CSR_from_mcause;
+                    when x"344" =>
+                        cmd.cs.CSR_select <= CSR_from_mip;
+                end case;
+
+        
             when others => null;
         end case;
 
