@@ -792,22 +792,22 @@ begin
                 case status.IR(14 downto 12) is 
                     when "001" =>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_simple;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_simple;
                     when "010" =>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_set;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_set;
                     when "011"=>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_rs1;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_clear;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_clear;
                     when "101"=>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_simple;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_simple;
                     when "110"=>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_set;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_set;
                     when "111" =>
                         cmd.cs.TO_CSR_sel<= TO_CSR_from_imm;
-                        cmd.cs.CSR_WRITE_mode_type <=  WRITE_mode_clear;
+                        cmd.cs.CSR_WRITE_mode <=  WRITE_mode_clear;
                 end case;
                 
                 case status.IR(31 downto 20) is 
