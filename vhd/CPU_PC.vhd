@@ -69,11 +69,11 @@ architecture RTL of CPU_PC is
         S_SB_2,
         S_SB_3,
         S_SH,
-        S_SH2,
-        S_SH3,
+        S_SH_2,
+        S_SH_3,
         S_SW,
-        S_SW2,
-        S_SW3
+        S_SW_2,
+        S_SW_3
     );
 
     signal state_d, state_q : State_type;
