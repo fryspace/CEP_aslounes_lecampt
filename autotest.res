@@ -20,8 +20,8 @@ lw          PASSED
 ori         PASSED
 or          PASSED
 rebouclage  PASSED
-sb          TIMEOUT
-sh          TIMEOUT
+sb          PASSED
+sh          PASSED
 slli        PASSED
 sll         PASSED
 slti        PASSED
@@ -33,6 +33,6 @@ sra         PASSED
 srli        PASSED
 srl         PASSED
 sub         PASSED
-sw          TIMEOUT
+sw          PASSED
 xori        PASSED
 xor         PASSED

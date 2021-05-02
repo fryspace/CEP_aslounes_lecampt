@@ -30,14 +30,6 @@ Compiling architecture rtl of entity work.IP_CLINT [ip_clint_default]
 Compiling architecture behavior of entity work.tb_autotest
 Built simulation snapshot work.tb_autotest
 
-****** Webtalk v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_autotest/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun May  2 12:08:41 2021...
-
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
@@ -493,7 +485,7 @@ Note: @ 00000400 = 1024
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Note: memory[1024] = 00001137
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1025] = 00010F83
+Note: memory[1025] = 00014F83
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Note: memory[1026] = FFFFFFFF
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
@@ -744,32 +736,24 @@ Note: memory[1024] = 01100093
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Note: memory[1025] = 00001137
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1026] = 01010113
+Note: memory[1026] = 00110023
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1027] = 00110023
+Note: memory[1027] = 00010F83
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1028] = 00010F83
-Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1029] = FFFFFFFF
+Note: memory[1028] = FFFFFFFF
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
 
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 240 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 300 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 430 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 490 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Failure: Timeout : 50 cycles
-Time: 500 ns  Iteration: 0  Process: /tb_autotest/line__66  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
-$finish called at time : 500 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" Line 247
+Note: pout expect   : 0x00000011  get : 0x00000011
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 190 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
 Preparing test: sh
 Running test: sh
 INFO: [Simtcl 6-17] Simulation restarted
@@ -781,13 +765,11 @@ Note: memory[1024] = 01100093
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Note: memory[1025] = 00001137
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1026] = 01010113
+Note: memory[1026] = 00111023
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1027] = 00111023
+Note: memory[1027] = 00011F83
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1028] = 00011F83
-Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1029] = FFFFFFFF
+Note: memory[1028] = FFFFFFFF
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
@@ -796,19 +778,13 @@ Warning: repeat char ' #' unknown for value 00000011
 Time: 10 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 240 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 300 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 430 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 490 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Failure: Timeout : 50 cycles
-Time: 500 ns  Iteration: 0  Process: /tb_autotest/line__66  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
-$finish called at time : 500 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" Line 247
+Note: pout expect   : 0x00000011  get : 0x00000011
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 190 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
 Preparing test: slli
 Running test: slli
 INFO: [Simtcl 6-17] Simulation restarted
@@ -1197,13 +1173,11 @@ Note: memory[1024] = 01100093
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Note: memory[1025] = 00001137
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1026] = 01010113
+Note: memory[1026] = 00112023
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1027] = 00112023
+Note: memory[1027] = 00012F83
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1028] = 00012F83
-Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
-Note: memory[1029] = FFFFFFFF
+Note: memory[1028] = FFFFFFFF
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_RAM/line__149  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/RAM32_reload.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 0 ps  Iteration: 1  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
@@ -1212,19 +1186,13 @@ Warning: repeat char ' #' unknown for value 00000011
 Time: 10 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
 Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 Time: 50 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 110 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 240 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 300 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 430 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-Time: 490 ns  Iteration: 5  Process: /tb_autotest/C_PROC/PO/CND/line__31  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/CPU_CND.vhd
-Failure: Timeout : 50 cycles
-Time: 500 ns  Iteration: 0  Process: /tb_autotest/line__66  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
-$finish called at time : 500 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/txt_util.vhd" Line 247
+Note: pout expect   : 0x00000011  get : 0x00000011
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Note: PASSED 
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+Failure: Assertion violation
+Time: 190 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
+$finish called at time : 190 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
 Preparing test: xori
 Running test: xori
 INFO: [Simtcl 6-17] Simulation restarted
@@ -1298,4 +1266,4 @@ Failure: Assertion violation
 Time: 150 ns  Iteration: 1  Process: /tb_autotest/tb_pout  File: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd
 $finish called at time : 150 ns : File "/user/0/.base/lecampt/home/Desktop/aslounes_lecampt/vhd/bench/tb_autotest.vhd" Line 203
 ## exit
-INFO: [Common 17-206] Exiting xsim at Sun May  2 12:08:54 2021...
+INFO: [Common 17-206] Exiting xsim at Sun May  2 13:32:16 2021...

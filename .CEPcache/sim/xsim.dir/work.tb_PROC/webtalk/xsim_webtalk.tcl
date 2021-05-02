@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Apr 26 11:01:57 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Sun May  2 13:31:54 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2552052" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "4e48ebb4-ad7e-44b6-ac43-8e28b6f3043d" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "f0b15e82-ab58-4635-85db-cb953b62ed78" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "32" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "44" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "CentOS" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "CentOS Linux release 7.8.2003 (Core)" -context "user_environment"
-webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "3407.617 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3563.317 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "200 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "12" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "2.74_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "134124_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1694426495 -regid "" -xml /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.xml -html /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.html -wdm /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "3.59_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "134148_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2131390945 -regid "" -xml /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.xml -html /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.html -wdm /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

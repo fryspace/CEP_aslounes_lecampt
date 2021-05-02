@@ -2,12 +2,12 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun May  2 12:08:54 2021
-# Process ID: 16287
+# Start of session at: Sun May  2 12:57:13 2021
+# Process ID: 23820
 # Current directory: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim
-# Command line: wbtcv -mode batch -source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_autotest/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/webtalk.log
 # Journal file: /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/webtalk.jou
 #-----------------------------------------------------------
-source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_autotest/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun May  2 12:08:54 2021...
+source /user/0/.base/lecampt/home/Desktop/aslounes_lecampt/.CEPcache/sim/xsim.dir/work.tb_PROC/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun May  2 12:57:14 2021...
