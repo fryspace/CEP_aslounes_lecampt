@@ -834,6 +834,8 @@ begin
                         cmd.cs.CSR_sel <= UNDEFINED;
                 end case;
 
+                state_d <= S_Fetch;
+
         
             when others => null;
         end case;
