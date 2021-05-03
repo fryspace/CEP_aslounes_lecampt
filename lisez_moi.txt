@@ -1,0 +1,5 @@
+Bonjour, juste quelques indications pour le programme en assembleur, les deux versions C et assembleurs y sont présentes ainsi que les fichiers compilés. Pour être sur de la compilation, il suffit de faire make dans le répertoire prog.
+Pour l'éxécuter sur un risc-V, il suffit de lancer la commande:
+qemu-system-riscv32 -machine cep -nographic -kernel code_pour_assembleur
+
+dans le répertoire prog.
